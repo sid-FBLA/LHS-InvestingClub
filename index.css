@@ -1,0 +1,61 @@
+/*Restyling for dark theme*/
+/*
+Background: 212121
+Content: 323232
+Content-Primary: 0AAE59 = RGB(10, 174, 89)
+Hover-state-primary: (34, 194, 109) = #1ec26d
+Content-Secondary: 14ffec
+text: ffffff
+*/
+body {
+  background-color: #212121;
+  color: white;
+}
+
+.bg-dark {
+  background-color: #323232;
+}
+
+.bg-primary {
+  background-color: #0AAE59;
+}
+
+.bg-secondary {
+  background-color: #14ffec;
+}
+
+/*Restyling Elements*/
+
+hr {
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #323232;
+}
+
+/* Resytling jumbotron */
+.jumbotron {
+  background-color: #323232;
+}
+
+/*Restyle table*/
+.table thead th {
+  border-bottom-color: rgb(0, 0, 0, 0.2);
+  border-top-color: rgb(0, 0, 0, 0.2);
+}
+
+.table-dark td, .table th {
+  border-color: rgb(0, 0, 0, 0.2);
+}
+
+
+
+/*Overriding body/bootstrap*/
+.border-dark .card-header {
+  color: #323232;
+}
+
+.card {
+  padding: 0;
+}
