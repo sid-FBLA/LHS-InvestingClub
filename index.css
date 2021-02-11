@@ -4,12 +4,15 @@ Background: 212121
 Content: 323232
 Content-Primary: 0AAE59 = RGB(10, 174, 89)
 Hover-state-primary: (34, 194, 109) = #1ec26d
+Hover-link: RBG(5, 164, 79) = #05A44F
 Content-Secondary: 14ffec
 text: ffffff
 */
 body {
   background-color: #212121;
   color: white;
+  /*Enable scrollspy*/
+  position: relative;
 }
 
 .bg-dark {
@@ -24,7 +27,26 @@ body {
   background-color: #14ffec;
 }
 
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.green-top {
+  border-length: 5rem;
+  border-top: 2px solid rgba(10, 174, 80);
+}
+
+
 /*Restyling Elements*/
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
 
 hr {
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -37,6 +59,8 @@ footer {
 /* Resytling jumbotron */
 .jumbotron {
   background-color: #323232;
+  /*Resetting jumbotron for sticky navbar*/
+  margin-top: 56px;
 }
 
 /*Restyle table*/
@@ -51,6 +75,40 @@ footer {
 
 
 
+/*Resetting row*/
+.row {
+  justify-content: space-around;
+}
+
+.row-advertise {
+
+}
+
+/*Card-advertise*/
+.row-advertise .col-lg-3:hover {
+  cursor: pointer;
+}
+
+.row-advertise .col-lg-3 .card {
+  background-color: #212121;
+
+
+}
+
+.row-advertise .col-lg-3 .card:hover {
+  transition: 250ms;
+  background-color: #323232;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+}
+
+/*Restyling green card icon*/
+.green-card-icon {
+  color: #0AAE59;
+  font-size: 3rem;
+}
+
+
+
 /*Overriding body/bootstrap*/
 .border-dark .card-header {
   color: #323232;
@@ -58,4 +116,9 @@ footer {
 
 .card {
   padding: 0;
+}
+
+.navbar-dark {
+  /*!important for override*/
+  background-color: #212121 !important;
 }
