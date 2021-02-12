@@ -46,6 +46,7 @@ nav {
   position: fixed !important;
   top: 0;
   width: 100%;
+  z-index: 2000;
 }
 
 hr {
@@ -121,4 +122,22 @@ footer {
 .navbar-dark {
   /*!important for override*/
   background-color: #212121 !important;
+}
+
+/*Board Page*/
+.board .row img {
+  /*Change width and height for mobile*/
+  width: 350px;
+  height: 350px;
+  margin-bottom: 0.5rem;
+}
+
+.board .row h2 {
+  margin-bottom: 0.25rem;
+}
+
+.board .row .green-bottom {
+  border-bottom: 2px solid rgb(10, 174, 89);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
