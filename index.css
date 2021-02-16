@@ -59,9 +59,29 @@ footer {
 
 /* Resytling jumbotron */
 .jumbotron {
-  background-color: #323232;
+  height: calc(100vh - 56px);
   /*Resetting jumbotron for sticky navbar*/
   margin-top: 56px;
+  margin: 56px 0px 0px 0px;
+
+}
+
+.jumbotron img {
+  position: absolute;
+  height: calc(100vh - 56px);
+  width: 100%;
+  object-fit: none;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.grey-overlay {
+  background-color: rgba(50, 50, 50, 0.5);
+  z-index: 1;
+}
+
+.override-overlay {
+  z-index: 2;
 }
 
 /*Restyle table*/
