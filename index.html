@@ -23,13 +23,18 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Animations CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Hello, world!</title>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Investing Club</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="112">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand mr-auto" href="#">Livingston High School Investing Club</a>
       <ul class="nav nav-pills">
@@ -43,7 +48,7 @@
           <a class="nav-link" href="#faqs">FAQs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </nav>
@@ -60,7 +65,7 @@
       </div>
     </div>
 
-    <div data-spy="scroll" data-target="#navbar" class="container">
+    <div class="container">
       <div class="text-center mt-7">
         <div class="">
           <h1 class="" id="about">About Us</h1>
@@ -81,7 +86,7 @@
       <!--Benefits of Joining-->
       <div class="row row-advertise ml-3 mt-5" id="">
         <!-- Card 1 -->
-        <div class="col-lg-3 col-sm-12 card-advertise mb-5">
+        <div data-aos="flip-left" class="col-lg-3 col-sm-12 card-advertise mb-5 aos-init aos-animate">
           <div class="card h-100 text-white mb-3 mr-3 text-center">
             <div class="card-body">
               <h5 class="card-title mb-3">Talks From Guest Speakers</h5>
@@ -91,7 +96,7 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="col-lg-3 col-sm-12 card-advertise mb-5">
+        <div data-aos="flip-left" class="col-lg-3 col-sm-12 card-advertise mb-5 aos-init aos-animate">
           <div class="card h-100 text-white mb-3 mr-3 text-center">
             <div class="card-body">
               <h5 class="card-title mb-3">Community Service Opportunities</h5>
@@ -101,7 +106,7 @@
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="col-lg-3 col-sm-12 card-advertise mb-5">
+        <div data-aos="flip-left" class="col-lg-3 col-sm-12 card-advertise mb-5 aos-init aos-animate">
           <div class="card h-100 text-white mb-3 mr-3 text-center">
             <div class="card-body">
               <h5 class="card-title mb-3">Investing Competitions</h5>
@@ -111,7 +116,7 @@
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="col-lg-3 col-sm-12 card-advertise mb-5">
+        <div data-aos="flip-left" class="col-lg-3 col-sm-12 card-advertise mb-5 aos-init aos-animate">
           <div class="card h-100 text-white mb-3 mr-3 text-center">
             <div class="card-body">
               <h5 class="card-title mb-3">PowerPoint Presentations</h5>
@@ -123,17 +128,30 @@
       </div>
 
       <!-- Board -->
-      <div data-spy="scroll" data-target="#navbar" class="board mt-7">
+      <div class="board mt-7">
         <div class="text-center mt-5">
           <h1 class="mb-2" id="board">Board</h1>
         </div>
         <!--Row 1-->
-        <div class="row mt-5">
+        <div data-aos="fade-down" data-aos="flip-down" class="row mt-5">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="green-bottom">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg" alt="Board Member"/>
-              <h2>Ari Roitman</h2>
-              <h5>Co-Secretary/Community Service Director</h5>
+              <h2>James Crowley</h2>
+              <h5>President</h5>
+            </div>
+            <p>
+              James enjoys playing basketball, exercising/working out, investing,
+              going to sporting events, video games, and hanging out with friends.
+              He has over 1,000 shares of stock scattered throughout the market and
+              loves working with peers in order to become more financially literate.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="green-bottom">
+              <img src="images/sid.jpg" alt="Board Member"/>
+              <h2>Siddharth Pandey</h2>
+              <h5>CFO & Outreach</h5>
             </div>
             <p>
               Ari spends his time studying, exercising, playing Lacrosse and Soccer,
@@ -145,8 +163,39 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="green-bottom">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg" alt="Board Member"/>
+              <h2>Krish Malhotra</h2>
+              <h5>Co-Vice President</h5>
+            </div>
+            <p>
+              Krish enjoys playing soccer, running and doing other physical activities.
+              Krish is really interested in trading stocks, and has a deep desire to
+              learn more about the Stock Market.
+            </p>
+          </div>
+        </div>
+        <!--Row 1-->
+        <div data-aos="fade-down" class="row mt-5">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="green-bottom">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg" alt="Board Member"/>
+              <h2>Quinn Devlin</h2>
+              <h5>Co-Vice President</h5>
+            </div>
+            <p>
+              Quinn truly loves playing football whether it be competitive or with a few friends at the turf.
+              He also enjoys track and field which he does in the winter and spring.
+              Additionally he loves exercising/working out, playing video games,
+              board games and studying for his classes. He’s looking forward to
+              diving deeper into community service activities with the rest of the club,
+              as well as gaining a better understanding for the economics behind the
+              stock market.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="green-bottom">
+              <img src="images/ari.png" alt="Board Member"/>
               <h2>Ari Roitman</h2>
-              <h5>Co-Secretary/Community Service Director</h5>
+              <h5>Co-Secretary</h5>
             </div>
             <p>
               Ari spends his time studying, exercising, playing Lacrosse and Soccer,
@@ -158,18 +207,169 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="green-bottom">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg" alt="Board Member"/>
-              <h2>Ari Roitman</h2>
-              <h5>Co-Secretary/Community Service Director</h5>
+              <h2>Hugo Vays</h2>
+              <h5>Co-Secretary</h5>
             </div>
             <p>
-              Ari spends his time studying, exercising, playing Lacrosse and Soccer,
-              and working on his investing portfolio. He was an early investor in TSLA,
-              ZM and DKNG and now mainly trades swing and day trades. He looks forward to
-              sharing his experiences with his peers in the Investing Club.
+              Hugo enjoys spending time on the basketball court,
+              playing video games with his friends, traveling to foreign countries,
+              and keeping an eye on the real estate market. He’s super excited about future
+              competitions and learning more about Investing.
             </p>
           </div>
         </div>
       </div>
 
+      <!-- FAQs -->
+      <div class="FAQs mt-7">
+        <div class="text-center mt-5">
+          <h1 class="mb-2" id="faqs">FAQs</h1>
+        </div>
+        <div id="accordion" class="mt-5">
+          <div data-aos="flip-down" class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What comes with being a member?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                As a member of Investing Club, you’ll have plenty of opportunities
+                to learn about and further your skills in the field of investing.
+                Additionally, we plan to host guest speakers to speak about personal
+                financial literacy, investing competitions, and community service
+                opportunities. You’ll have unlimited access to club powerpoint
+                presentations as well as eager-to-learn peers who have plenty of
+                cool stories to share!
+              </div>
+            </div>
+          </div>
+          <div data-aos="flip-down" class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How frequent are meetings?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Investing club meets about twice a month after school for
+                15-30 minutes.
+              </div>
+            </div>
+          </div>
+          <div data-aos="flip-down" class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What will I learn in this club?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                You’ll learn about SO many different topics of finance ranging
+                from investing in stocks/bonds, real estate, sports memorabilia,
+                mutual funds, etc. Don’t worry, we’ll cover the basics!
+                You’ll be an expert on how the stock market works.
+              </div>
+            </div>
+          </div>
+          <div data-aos="flip-down" class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Does this club do community service?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                We sure do! As a high school student during a global pandemic,
+                community service opportunities may be hard to come by. As a member of the Investing Club,
+                you’ll have plenty of chances to participate in community service.
+                Whether it be canned food drives or fundraising campaigns, we’ll work with our members to pay it forward.
+              </div>
+            </div>
+          </div>
+          <div data-aos="flip-down" class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How do I join?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXwygBBXpQCqB7Y9LzXYf4HJnx1nwMbY-bTTOMoXVIFX5EQw/viewform" target="_blank">
+                  Click here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bmefbla mt-7">
+        <div class="text-center mt-5">
+          <h1 class="mb-2" id="bmefbla">Partner</h1>
+        </div>
+        <div class="d-flex mt-5">
+          <div class="d-flex text-black">
+            <div class="fundraiser text-center text-black d-flex align-self-center">
+              <div class="align-self-center">
+                <h2 class="mt-2">Fundraisers</h2>
+                <p>
+                  Proceeds from our fundraisers go to <br /> BME FBLA to
+                  aid in their mission to provide business education to anyone, anywhere.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bmefbla-circle text-center d-flex">
+            <div class="align-self-center mx-auto">
+              <h1 class="mt-3">BME FBLA</h1>
+              <img src="images/bmefbla.png" rel="BME FBLA logo"/>
+              <p class="text-black mt-3">
+                "Providing Free Quality <br />Business Education To Anyone, Anywhere"
+              </p>
+            </div>
+          </div>
+          <div class="d-flex text-black">
+            <div class="fundraiser text-center text-black d-flex align-self-center">
+              <div class="align-self-center">
+                <h2 class="mt-2">Events</h2>
+                <p>
+                  BME FBLA invites us to contribute to their events.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-7">
+      <div class="container mb-3">
+        <div class="text-center">
+          <h2 class="mb-3">Contact</h2>
+          <a class="mr-3 social" href="https://www.instagram.com/lhs_investing_club/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="social" href="mailto:james.crowley@lps-students.org" target="_blank"><i class="far fa-paper-plane"></i></a>
+        </div>
+      </div>
+      <div class="dark">
+        <p class="text-center">
+          © 2021: Investing Club X
+          LHSWebDev
+        </p>
+      </div>
+    </footer>
+    <!--initializing AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

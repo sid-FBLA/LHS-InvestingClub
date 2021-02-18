@@ -40,6 +40,10 @@ body {
   border-top: 2px solid rgba(10, 174, 80);
 }
 
+.dark {
+  background-color: #212121;
+}
+
 
 /*Restyling Elements*/
 nav {
@@ -55,6 +59,12 @@ hr {
 
 footer {
   background-color: #323232;
+}
+
+/*Restyling Navbar*/
+#navbar {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+  padding: 12px 24px 12px 24px;
 }
 
 /* Resytling jumbotron */
@@ -160,4 +170,94 @@ footer {
   border-bottom: 2px solid rgb(10, 174, 89);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.board .row .col-lg-4 img {
+  border-radius: 5%;
+}
+
+/*Fixiing up the accordion*/
+.FAQs #accordion .card .card-body {
+  color: black;
+}
+
+.FAQs #accordion .card {
+  margin-bottom: 1rem;
+}
+
+/*BME FBLA*/
+.bmefbla .d-flex {
+  color: black;
+}
+
+.bmefbla .d-flex .bmefbla-circle {
+  background-color: #F7F7F7;
+  width: 500px;
+  height: 500px;
+  border: solid 3px rgba(0, 0, 0, 0.125);
+  border-radius: 50%;
+  color: black;
+}
+
+.bmefbla .d-flex .bmefbla-circle h1 {
+  font-size: 3.5rem;
+}
+
+.bmefbla .d-flex .bmefbla-circle img {
+  width: 245px;
+  height: 245px;
+}
+
+.bmefbla .d-flex .bmefbla-circle p {
+  font-size: 1rem;
+}
+
+.bmefbla .d-flex .fundraiser {
+  background-color: #F7F7F7;
+  width: 290px;
+  height: 290px;
+  border: solid 3px rgba(0, 0, 0, 0.125);
+  border-radius: 50%;
+}
+
+.bmefbla .flex-column {
+}
+
+.bmefbla .fundraiser .d-flex:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+.bmefbla .fundraiswer .d-flex:nth-child(2) {
+  margin-left: 0.5;
+}
+
+/*footer*/
+.footer .container h2 {
+  padding-top: 0.5rem;
+}
+
+.footer .container .social i {
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+.footer .container .social i {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.footer .container .social .fa-instagram {
+  /*Making border square*/
+  padding: 16px 18px 16px 18px;
+}
+
+.footer .container .social i:hover {
+  transition: 250ms;
+  background-color: #0AAE59;
+  border-color: #0AAE59;
+  color: #ffffff;
+}
+
+.footer .dark {
+  padding: 16px 0px 0px 0px;
 }
