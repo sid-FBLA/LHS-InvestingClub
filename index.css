@@ -8,11 +8,17 @@ Hover-link: RBG(5, 164, 79) = #05A44F
 Content-Secondary: 14ffec
 text: ffffff
 */
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #212121;
   color: white;
   /*Enable scrollspy*/
   position: relative;
+  overflow: auto;
 }
 
 .bg-dark {

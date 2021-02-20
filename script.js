@@ -29,4 +29,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
       scrollBy(0, -offset);
   });
 
+  //Scrollbar issue
+  // calculate width of scrollbar and add it as inline-style to the body
+  var checkScrollBars = function() {
+      var b = $('body');
+      var normalw = 0;
+      var scrollw = 0;
+      normalw = window.innerWidth;
+      scrollw = normalw - b.width();
+
+      var plusScrollBar = 'calc(' + '100% + ' + scrollw + 'px)'
+      document.querySelector('body').style.minWidth = plusScrollBar;
+  }();
+
 }
