@@ -197,6 +197,11 @@ footer {
   border: solid 3px rgba(0, 0, 0, 0.125);
   border-radius: 50%;
   color: black;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+}
+
+.bmefbla .d-flex .bmefbla-circle:hover > img {
+
 }
 
 .bmefbla .d-flex .bmefbla-circle h1 {
@@ -208,16 +213,22 @@ footer {
   height: 245px;
 }
 
+.bmefbla .d-flex .bmefbla-circle img:hover {
+  transition: 250ms;
+  transform: scale(1.05);
+}
+
 .bmefbla .d-flex .bmefbla-circle p {
   font-size: 1rem;
 }
 
 .bmefbla .d-flex .fundraiser {
   background-color: #F7F7F7;
-  width: 290px;
-  height: 290px;
+  width: 325px;
+  height: 325px;
   border: solid 3px rgba(0, 0, 0, 0.125);
   border-radius: 50%;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
 }
 
 .bmefbla .flex-column {

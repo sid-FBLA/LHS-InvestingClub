@@ -1,5 +1,10 @@
 window.addEventListener('DOMContentLoaded', (event) => {
 
+  //Enabling tooltips
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
   //Allows for modals to show
   $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
