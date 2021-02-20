@@ -292,7 +292,11 @@ footer {
 
 }
 
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  #navbar .nav {
+    margin-left: auto;
+  }
+}
 
 @media (min-width: 1200px) {
   .bmefbla .d-flex .bmefbla-circle {
