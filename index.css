@@ -65,15 +65,17 @@ footer {
 #navbar {
   border-bottom: solid 2px rgba(0, 0, 0, 0.2);
   padding: 12px 24px 12px 24px;
+  box-sizing: margin-box;
+  max-width: calc(100vw);
 }
 
 /* Resytling jumbotron */
 .jumbotron {
   height: calc(100vh - 56px);
+  max-height: 980px;
   /*Resetting jumbotron for sticky navbar*/
   margin-top: 56px;
   margin: 56px 0px 0px 0px;
-
 }
 
 .jumbotron img {
@@ -157,9 +159,11 @@ footer {
 /*Board Page*/
 .board .row img {
   /*Change width and height for mobile*/
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .board .row h2 {
@@ -170,6 +174,9 @@ footer {
   border-bottom: 2px solid rgb(10, 174, 89);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .board .row .col-lg-4 img {
@@ -192,8 +199,8 @@ footer {
 
 .bmefbla .d-flex .bmefbla-circle {
   background-color: #F7F7F7;
-  width: 500px;
-  height: 500px;
+  width: 290px;
+  height: 290px;
   border: solid 3px rgba(0, 0, 0, 0.125);
   border-radius: 50%;
   color: black;
@@ -204,13 +211,18 @@ footer {
 
 }
 
+.bmefbla .flex-column .d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .bmefbla .d-flex .bmefbla-circle h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 
 .bmefbla .d-flex .bmefbla-circle img {
-  width: 245px;
-  height: 245px;
+  width: 100px;
+  height: 100px;
 }
 
 .bmefbla .d-flex .bmefbla-circle img:hover {
@@ -219,16 +231,16 @@ footer {
 }
 
 .bmefbla .d-flex .bmefbla-circle p {
-  font-size: 1rem;
 }
 
 .bmefbla .d-flex .fundraiser {
   background-color: #F7F7F7;
-  width: 325px;
-  height: 325px;
+  width: 290px;
+  height: 290px;
   border: solid 3px rgba(0, 0, 0, 0.125);
   border-radius: 50%;
   box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+  margin-top: 2rem;
 }
 
 .bmefbla .flex-column {
@@ -238,9 +250,6 @@ footer {
   margin-right: 0.5rem;
 }
 
-.bmefbla .fundraiswer .d-flex:nth-child(2) {
-  margin-left: 0.5;
-}
 
 /*footer*/
 .footer .container h2 {
@@ -271,4 +280,53 @@ footer {
 
 .footer .dark {
   padding: 16px 0px 0px 0px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) {
+  .bmefbla .d-flex .bmefbla-circle {
+    background-color: #F7F7F7;
+    width: 550px;
+    height: 550px;
+    border: solid 3px rgba(0, 0, 0, 0.125);
+    border-radius: 50%;
+    color: black;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+    align-self: center;
+  }
+
+  .bmefbla .d-flex .bmefbla-circle .mx-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+  .bmefbla .flex-column .d-flex {
+    flex-direction: row;
+  }
+
+  .bmefbla .d-flex .bmefbla-circle h1 {
+    font-size: 3.5rem;
+  }
+
+  .bmefbla .d-flex .bmefbla-circle img {
+    width: 275px;
+    height: 275px;
+  }
+
+  .bmefbla .flex-column .d-flex .d-flex {
+    height: 375px;
+    width: 375px;
+  }
+
+  .bmefbla .flex-column .d-flex .d-flex:nth-child(2) {
+    margin-left: auto;
+  }
+
+
 }
